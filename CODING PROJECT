@@ -5,7 +5,6 @@ public class UniversityProject {
 		char choices;
 		Scanner input = new Scanner (System.in);
 		do {
-		
 		System.out.println("===================================WELCOME TO UUM SERVICE==============================");
 		System.out.println("===================================HOW CAN WE ASSIST YOU?==============================");
 		System.out.println();
@@ -21,7 +20,8 @@ public class UniversityProject {
 		
 		System.out.println("Please choose your service based on the table above : ");
 		int opt = input.nextInt();
-	
+		System.out.println();
+		Medical.displayWel();
 		if (opt == 1) {
 			Employee emp = new Employee();
 			emp.main(args);
@@ -54,3 +54,4 @@ public class UniversityProject {
 		while (choices == 'Y' || choices == 'y');
 	}
 }
+
